@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yalisto-landing/static/css/main.442451ae.css",
-    "main.js": "/yalisto-landing/static/js/main.49a6dbe4.js",
+    "main.js": "/yalisto-landing/static/js/main.da1391c0.js",
     "static/js/859.1aacfcf6.chunk.js": "/yalisto-landing/static/js/859.1aacfcf6.chunk.js",
     "static/js/176.5e2bc269.chunk.js": "/yalisto-landing/static/js/176.5e2bc269.chunk.js",
     "static/js/295.22b5ac1b.chunk.js": "/yalisto-landing/static/js/295.22b5ac1b.chunk.js",
@@ -15,7 +15,7 @@
     "static/js/545.4438713f.chunk.js": "/yalisto-landing/static/js/545.4438713f.chunk.js",
     "index.html": "/yalisto-landing/index.html",
     "main.442451ae.css.map": "/yalisto-landing/static/css/main.442451ae.css.map",
-    "main.49a6dbe4.js.map": "/yalisto-landing/static/js/main.49a6dbe4.js.map",
+    "main.da1391c0.js.map": "/yalisto-landing/static/js/main.da1391c0.js.map",
     "859.1aacfcf6.chunk.js.map": "/yalisto-landing/static/js/859.1aacfcf6.chunk.js.map",
     "176.5e2bc269.chunk.js.map": "/yalisto-landing/static/js/176.5e2bc269.chunk.js.map",
     "295.22b5ac1b.chunk.js.map": "/yalisto-landing/static/js/295.22b5ac1b.chunk.js.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.442451ae.css",
-    "static/js/main.49a6dbe4.js"
+    "static/js/main.da1391c0.js"
   ]
 }
