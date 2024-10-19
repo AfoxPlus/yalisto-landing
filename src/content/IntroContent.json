@@ -1,0 +1,15 @@
+{
+  "title": "Digitaliza el menú de tu restaurante.",
+  "text": "Transforma la experiencia de tus clientes con un menú digital. Ofrece una navegación fácil y rápida desde sus dispositivos móviles, mantén tu oferta siempre actualizada.",
+  "button": [
+    {
+      "title": "Explorar",
+      "deeplink": "https://play.google.com/store/apps/details?id=com.afoxplus.yalisto&pcampaignid=web_share"
+    },
+    {
+      "title": "Más Información",
+      "color": "#fff",
+      "deeplink": "https://wa.me/+51966997499"
+    }
+  ]
+}
