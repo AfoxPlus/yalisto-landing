@@ -2,7 +2,7 @@
   "name": "yalisto-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://afoxplus.github.io/yalisto-landing",
+  "homepage": "http://afoxplus.github.io/yalisto-landing",
   "dependencies": {
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.68",
@@ -24,7 +24,7 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo yalistoapp.com > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
