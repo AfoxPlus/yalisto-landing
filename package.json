@@ -2,7 +2,7 @@
   "name": "yalisto-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://afoxplus.github.io/yalisto-landing",
+  "homepage": "http://yalistoapp.com",
   "dependencies": {
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.68",
