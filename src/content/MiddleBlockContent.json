@@ -1,8 +1,8 @@
 {
-    "title": "Introduce your product quickly & effectively",
-    "text": "Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.",
+    "title": "Publicar tu Establecimiento en YaListo es Muy Fácil",
+    "text": "Registra los datos de tu establecimiento y te contactaremos para cargar tu menú. ¡Únete a YaListo y comienza a atraer más clientes en un instante!",
     "button": {
-      "title": "Suscribirme",
+      "title": "Publica tu establecimiento",
       "deeplink": "https://forms.gle/GUBmE6YyndHkyE2R7"
     }
   }

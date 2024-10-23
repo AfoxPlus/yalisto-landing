@@ -1,15 +1,10 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Somos una Startup Innovadora",
+  "text": "En YaListo, atraemos clientes a tu establecimiento, mejoramos la experiencia de visualización de tu menú y aceleramos el proceso de pedidos. ¡Únete a nosotros y transforma tu negocio!",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
-    },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "¿Por qué Elegir YaListo?",
+      "content": "La digitalización es un aliado clave para tu negocio. Con YaListo, aumenta tu visibilidad y potencia tus ventas de manera efectiva.",
       "icon": "notes.svg"
     }
   ]
