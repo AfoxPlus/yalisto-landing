@@ -28,7 +28,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    const url = "https://4qg2nayfoi.execute-api.us-east-1.amazonaws.com/prod/restaurant/mail";
 
     try {
       if (Object.values(errors).every((error) => error === "")) {

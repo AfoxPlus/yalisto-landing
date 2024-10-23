@@ -27,7 +27,7 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
               <Content>{t(content)}</Content>
               {button && (
                 <Button name="submit" 
-                maxWidth={"226px"}
+                maxWidth={"248px"}
                 onClick={() => openLinkBy(button.deeplink)}>
                   {t(button.title)}
                 </Button>
