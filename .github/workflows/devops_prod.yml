@@ -14,5 +14,8 @@ jobs:
         with:
           node-version: "18.x"
 
+      - name: Install NPM dependencies
+        run: npm install
+
       - name: Deploy landing page
         run: npm run deploy
