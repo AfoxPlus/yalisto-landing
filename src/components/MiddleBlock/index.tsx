@@ -13,8 +13,11 @@ interface MiddleBlockProps {
 
 const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
 
-  const openLinkBy = (deeplink?: string) => {
-    window.open(deeplink, "_blank");
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id) as HTMLDivElement;
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -28,7 +31,7 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
               {button && (
                 <Button name="submit" 
                 maxWidth={"248px"}
-                onClick={() => openLinkBy(button.deeplink)}>
+                onClick={() => scrollTo("publish")}>
                   {t(button.title)}
                 </Button>
               )}

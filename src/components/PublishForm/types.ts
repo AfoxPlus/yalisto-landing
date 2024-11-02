@@ -1,5 +1,5 @@
 import { TFunction } from "react-i18next";
-export interface ContactProps {
+export interface PublishProps {
   title: string;
   content: string;
   id: string;

@@ -19,6 +19,7 @@ export interface SvgIconProps {
 }
 
 export interface InputProps {
+  label: string;
   name: string;
   placeholder: string;
   t: TFunction;
@@ -32,6 +33,8 @@ export interface InputProps {
 }
 export interface validateProps {
   name: string;
-  message: string;
   email: string;
+  phone: string;
+  establishmentName: string;
+  establishmentType: string;
 }

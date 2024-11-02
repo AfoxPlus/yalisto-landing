@@ -1,16 +1,15 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-import { ContactProps, ValidationTypeProps } from "./types";
+import { PublishProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
 import { Button } from "../../common/Button";
 import Block from "../Block";
 import Input from "../../common/Input";
-import TextArea from "../../common/TextArea";
-import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
+import { PublishContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
-const Contact = ({ title, content, id, t }: ContactProps) => {
+const Publish = ({ title, content, id, t }: PublishProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
@@ -19,7 +18,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   };
 
   return (
-    <ContactContainer id={id}>
+    <PublishContainer id={id}>
       <Row justify="space-between" align="middle">
         <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
@@ -31,9 +30,10 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
                 <Input
+                  label = "Nombre"
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Ej. Pedro"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -41,32 +41,57 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <Input
+                 label = "Email"
                   type="text"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Ej. pedro_123@gmail.com"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
                 <ValidationType type="email" />
               </Col>
               <Col span={24}>
-                <TextArea
-                  placeholder="Your Message"
-                  value={values.message || ""}
-                  name="message"
+                <Input
+                    label = "Celular"
+                  type="tel"
+                  name="phone"
+                  placeholder="Ej. 966212321"
+                  value={values.phone || ""}
                   onChange={handleChange}
                 />
-                <ValidationType type="message" />
+                <ValidationType type="phone" />
+              </Col>
+              <Col span={24}>
+                <Input
+                 label = "Establecimiento"
+                  type="text"
+                  name="establishmentName"
+                  placeholder="Ej. Kitchen"
+                  value={values.establishmentName || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="establishmentName" />
+              </Col>
+              <Col span={24}>
+                <Input
+                 label = "Tipo de Establecimiento"
+                  type="text"
+                  name="establishmentType"
+                  placeholder="Ej. Restaurante"
+                  value={values.establishmentType || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="establishmentType" />
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Submit")}</Button>
+                <Button name="submit">{t("Register")}</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>
         </Col>
       </Row>
-    </ContactContainer>
+    </PublishContainer>
   );
 };
 
-export default withTranslation()(Contact);
+export default withTranslation()(Publish);

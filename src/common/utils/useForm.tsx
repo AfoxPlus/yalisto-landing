@@ -4,13 +4,17 @@ import { notification } from "antd";
 interface IValues {
   name: string;
   email: string;
-  message: string;
+  phone: string;
+  establishmentName: string;
+  establishmentType: string;
 }
 
 const initialValues: IValues = {
   name: "",
   email: "",
-  message: "",
+  phone: "",
+  establishmentName: "",
+  establishmentType: ""
 };
 
 export const useForm = (validate: { (values: IValues): IValues }) => {
@@ -25,10 +29,12 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
   const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     const values = formState.values;
+    console.log("HANDLE SUBMIT")
+    console.log(values)
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = "https://4qg2nayfoi.execute-api.us-east-1.amazonaws.com/prod/restaurant/mail";
+    const url = "https://4qg2nayfoi.execute-api.us-east-1.amazonaws.com/prod/restaurant/partner";
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
