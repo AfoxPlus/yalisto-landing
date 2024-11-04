@@ -45,7 +45,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
           },
           body: JSON.stringify(values),
         });
-
+        
         if (!response.ok) {
           notification["error"]({
             message: "Error",
@@ -58,11 +58,20 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
             values: { ...initialValues },
             errors: { ...initialValues },
           }));
-
-          notification["success"]({
-            message: "Success",
-            description: "¡Tu mensaje ha sido enviado!",
-          });
+          const data = await response.json();
+          if(data.success) {
+            notification["success"]({
+              duration: 10,
+              message: "Success",
+              description: data.message,
+            });
+          }else {
+            notification["error"]({
+              message: "Error",
+              description: data.message,
+            });
+          }
+          
         }
       }
     } catch (error) {
