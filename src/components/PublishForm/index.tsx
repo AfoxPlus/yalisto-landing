@@ -30,7 +30,7 @@ const Publish = ({ title, content, id, t }: PublishProps) => {
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
                 <Input
-                  label = "Nombre"
+                  label = "Nombres"
                   type="text"
                   name="name"
                   placeholder="Ej. Pedro"
@@ -52,7 +52,7 @@ const Publish = ({ title, content, id, t }: PublishProps) => {
               </Col>
               <Col span={24}>
                 <Input
-                    label = "Celular"
+                  label = "Celular"
                   type="tel"
                   name="phone"
                   placeholder="Ej. 966212321"
@@ -63,10 +63,10 @@ const Publish = ({ title, content, id, t }: PublishProps) => {
               </Col>
               <Col span={24}>
                 <Input
-                 label = "Establecimiento"
+                  label = "Nombre de tu establecimiento"
                   type="text"
                   name="establishmentName"
-                  placeholder="Ej. Kitchen"
+                  placeholder="Ej. Don Pepe"
                   value={values.establishmentName || ""}
                   onChange={handleChange}
                 />
@@ -74,7 +74,7 @@ const Publish = ({ title, content, id, t }: PublishProps) => {
               </Col>
               <Col span={24}>
                 <Input
-                 label = "Tipo de Establecimiento"
+                  label = "Tipo de tu establecimiento"
                   type="text"
                   name="establishmentType"
                   placeholder="Ej. Restaurante"
